@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+		<ProductVersion>8.0.30703</ProductVersion>
+		<SchemaVersion>2.0</SchemaVersion>
+		<ProjectGuid>{7BE38492-6E4D-49BF-8DA8-3E1BC42A0AC9}</ProjectGuid>
+		<OutputType>Exe</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>DevGuideExamplesProject</RootNamespace>
+		<AssemblyName>DevGuideExamplesProject</AssemblyName>
+		<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+		<FileAlignment>512</FileAlignment>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+		<Optimize>true</Optimize>
+		<DefineConstants>_CRTDBG_MAP_ALLOC;TRACE;</DefineConstants>
+		<OutputPath>..\..\..\..\..\..\..\exe\vc11_amd64dll</OutputPath>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+		<PlatformTarget>x64</PlatformTarget>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="System"/>
+		<Reference Include="System.Core"/>
+		<Reference Include="System.Windows.Forms"/>
+		<Reference Include="System.Xml.Linq"/>
+		<Reference Include="System.Data.DataSetExtensions"/>
+		<Reference Include="System.Data"/>
+		<Reference Include="System.Xml"/>
+		<Reference Include="WindowsBase"/>
+		<Reference Include="System.Xaml"/>
+		<Reference Include="PresentationCore"/>
+		<Reference Include="PresentationFramework"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="..\..\..\..\..\..\..\Core\Examples\ManagedWrappers\GeneralAssemblyInfo.cs">
+			<Link>GeneralAssemblyInfo.cs</Link>
+		</Compile>
+		<Page Include="..\..\..\..\..\..\..\Core\Examples\ManagedWrappers\DevGuideExamples\DevGuideExamplesProject\Window1.xaml">
+			<Link>Window1.xaml</Link>
+			<SubType>Designer</SubType>
+		</Page>
+		<Compile Include="..\..\..\..\..\..\..\Core\Examples\ManagedWrappers\DevGuideExamples\DevGuideExamplesProject\Window1.xaml.cs">
+			<Link>Window1.xaml.cs</Link>
+			<SubType>Code</SubType>
+			<DependentUpon>Window1.xaml</DependentUpon>
+		</Compile>
+		<ApplicationDefinition Include="..\..\..\..\..\..\..\Core\Examples\ManagedWrappers\DevGuideExamples\DevGuideExamplesProject\App.xaml">
+			<Link>App.xaml</Link>
+			<SubType>Designer</SubType>
+		</ApplicationDefinition>
+		<Compile Include="..\..\..\..\..\..\..\Core\Examples\ManagedWrappers\DevGuideExamples\DevGuideExamplesProject\App.xaml.cs">
+			<Link>App.xaml.cs</Link>
+			<SubType>Code</SubType>
+			<DependentUpon>App.xaml</DependentUpon>
+		</Compile>
+		<None Include="Properties\Settings.settings">
+			<Generator>SettingsSingleFileGenerator</Generator>
+			<LastGenOutput>Settings.Designer.cs</LastGenOutput>
+		</None>
+		<Compile Include="Properties\Settings.Designer.cs">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Settings.settings</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="Properties\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+		<Compile Include="Properties\Resources.Designer.cs">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+		<Compile Include="Properties\AssemblyInfo.cs"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="TD_Mgd_4.02_11, Version=4.2.2.0, Culture=neutral, PublicKeyToken=460a0bef3ba73253">
+  <SpecificVersion>False</SpecificVersion>
+  <HintPath>..\..\..\..\..\..\exe\vc11_amd64dll\TD_Mgd_4.02_11.dll</HintPath>
+</Reference>
+
+		<ProjectReference Include="..\C#\CDevGuideExamplesProject.csproj">
+			<Name>CDevGuideExamplesProject</Name>
+			<Project>{99F5185F-72C4-48D3-A772-2EF3851D8B03}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\VB.NET\VBNETDevGuideExamplesProject.vbproj">
+			<Name>VBNETDevGuideExamplesProject</Name>
+			<Project>{1204FCB7-471E-4F67-BC6E-5BF76AA6020F}</Project>
+		</ProjectReference>
+	</ItemGroup>
+	<Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+	<PropertyGroup>
+		<PostBuildEvent>echo off
+		</PostBuildEvent>
+	</PropertyGroup>
+</Project>

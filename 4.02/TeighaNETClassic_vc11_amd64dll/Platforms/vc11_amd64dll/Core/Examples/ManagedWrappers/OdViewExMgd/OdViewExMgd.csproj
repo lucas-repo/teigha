@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+		<ProductVersion>8.0.30703</ProductVersion>
+		<SchemaVersion>2.0</SchemaVersion>
+		<ProjectGuid>{2F18EEC2-6E5B-41D0-8F0C-439740E72607}</ProjectGuid>
+		<OutputType>WinExe</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>OdViewExMgd</RootNamespace>
+		<AssemblyName>OdViewExMgd</AssemblyName>
+		<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+		<FileAlignment>512</FileAlignment>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+		<Optimize>true</Optimize>
+		<DefineConstants>_CRTDBG_MAP_ALLOC;TRACE;</DefineConstants>
+		<OutputPath>..\..\..\..\..\..\exe\vc11_amd64dll</OutputPath>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+		<PlatformTarget>x64</PlatformTarget>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="System"/>
+		<Reference Include="System.Data"/>
+		<Reference Include="System.Deployment"/>
+		<Reference Include="System.Drawing"/>
+		<Reference Include="System.Windows.Forms"/>
+		<Reference Include="System.Xml"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\AppSettings.cs">
+			<Link>AppSettings.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\AuxCls.cs">
+			<Link>AuxCls.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\HostAppServ.cs">
+			<Link>HostAppServ.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Orbit.cs">
+			<Link>Orbit.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\SelectionReactor.cs">
+			<Link>SelectionReactor.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Program.cs">
+			<Link>Program.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\GeneralAssemblyInfo.cs">
+			<Link>GeneralAssemblyInfo.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\GripPionts\ExGripData.cs">
+			<Link>GripPionts/ExGripData.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\GripPionts\ExGripDrag.cs">
+			<Link>GripPionts/ExGripDrag.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\GripPionts\GripManager.cs">
+			<Link>GripPionts/GripManager.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\GripPionts\Overruling\ImageOverrule.cs">
+			<Link>GripPionts/Overruling/ImageOverrule.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\GripPionts\Overruling\LineOverrule.cs">
+			<Link>GripPionts/Overruling/LineOverrule.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Export_Import\ImExport.cs">
+			<Link>Export_Import/ImExport.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Print\Print.cs">
+			<Link>Print/Print.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\BlockInsert.cs">
+			<Link>BlockInsert.cs</Link>
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\BlockInsert.Designer.cs">
+			<Link>BlockInsert.Designer.cs</Link>
+			<DependentUpon>BlockInsert.cs</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\BlockInsert.resx">
+			<Link>BlockInsert.resx</Link>
+			<SubType>Designer</SubType>
+			<DependentUpon>BlockInsert.cs</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\File_Dependency.cs">
+			<Link>File_Dependency.cs</Link>
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\File_Dependency.Designer.cs">
+			<Link>File_Dependency.Designer.cs</Link>
+			<DependentUpon>File_Dependency.cs</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\File_Dependency.resx">
+			<Link>File_Dependency.resx</Link>
+			<SubType>Designer</SubType>
+			<DependentUpon>File_Dependency.cs</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Export_Import\BMPExport.cs">
+			<Link>Export_Import/BMPExport.cs</Link>
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Export_Import\BMPExport.Designer.cs">
+			<Link>Export_Import/BMPExport.Designer.cs</Link>
+			<DependentUpon>BMPExport.cs</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Export_Import\BMPExport.resx">
+			<Link>Export_Import/BMPExport.resx</Link>
+			<SubType>Designer</SubType>
+			<DependentUpon>BMPExport.cs</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Form1.cs">
+			<Link>Form1.cs</Link>
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Form1.Designer.cs">
+			<Link>Form1.Designer.cs</Link>
+			<DependentUpon>Form1.cs</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Form1.resx">
+			<Link>Form1.resx</Link>
+			<SubType>Designer</SubType>
+			<DependentUpon>Form1.cs</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Export_Import\PDFExport.cs">
+			<Link>Export_Import/PDFExport.cs</Link>
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Export_Import\PDFExport.Designer.cs">
+			<Link>Export_Import/PDFExport.Designer.cs</Link>
+			<DependentUpon>PDFExport.cs</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Export_Import\PDFExport.resx">
+			<Link>Export_Import/PDFExport.resx</Link>
+			<SubType>Designer</SubType>
+			<DependentUpon>PDFExport.cs</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Export_Import\PublishDrawingSheets.cs">
+			<Link>Export_Import/PublishDrawingSheets.cs</Link>
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Export_Import\PublishDrawingSheets.Designer.cs">
+			<Link>Export_Import/PublishDrawingSheets.Designer.cs</Link>
+			<DependentUpon>PublishDrawingSheets.cs</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Export_Import\PublishDrawingSheets.resx">
+			<Link>Export_Import/PublishDrawingSheets.resx</Link>
+			<SubType>Designer</SubType>
+			<DependentUpon>PublishDrawingSheets.cs</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Export_Import\publishSetting.cs">
+			<Link>Export_Import/publishSetting.cs</Link>
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Export_Import\publishSetting.Designer.cs">
+			<Link>Export_Import/publishSetting.Designer.cs</Link>
+			<DependentUpon>publishSetting.cs</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Export_Import\publishSetting.resx">
+			<Link>Export_Import/publishSetting.resx</Link>
+			<SubType>Designer</SubType>
+			<DependentUpon>publishSetting.cs</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\PasswordDlg.cs">
+			<Link>PasswordDlg.cs</Link>
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\PasswordDlg.Designer.cs">
+			<Link>PasswordDlg.Designer.cs</Link>
+			<DependentUpon>PasswordDlg.cs</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\PasswordDlg.resx">
+			<Link>PasswordDlg.resx</Link>
+			<SubType>Designer</SubType>
+			<DependentUpon>PasswordDlg.cs</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Print\PageSetup.cs">
+			<Link>Print/PageSetup.cs</Link>
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Print\PageSetup.Designer.cs">
+			<Link>Print/PageSetup.Designer.cs</Link>
+			<DependentUpon>PageSetup.cs</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Print\PageSetup.resx">
+			<Link>Print/PageSetup.resx</Link>
+			<SubType>Designer</SubType>
+			<DependentUpon>PageSetup.cs</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\SelectLayouts.cs">
+			<Link>SelectLayouts.cs</Link>
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\SelectLayouts.Designer.cs">
+			<Link>SelectLayouts.Designer.cs</Link>
+			<DependentUpon>SelectLayouts.cs</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\SelectLayouts.resx">
+			<Link>SelectLayouts.resx</Link>
+			<SubType>Designer</SubType>
+			<DependentUpon>SelectLayouts.cs</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Layers.cs">
+			<Link>Layers.cs</Link>
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Layers.Designer.cs">
+			<Link>Layers.Designer.cs</Link>
+			<DependentUpon>Layers.cs</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdViewExMgd\Layers.resx">
+			<Link>Layers.resx</Link>
+			<SubType>Designer</SubType>
+			<DependentUpon>Layers.cs</DependentUpon>
+		</EmbeddedResource>
+		<None Include="Properties\Settings.settings">
+			<Generator>SettingsSingleFileGenerator</Generator>
+			<LastGenOutput>Settings.Designer.cs</LastGenOutput>
+		</None>
+		<Compile Include="Properties\Settings.Designer.cs">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Settings.settings</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="Properties\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+		<Compile Include="Properties\Resources.Designer.cs">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+		<Compile Include="Properties\AssemblyInfo.cs"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="TD_Mgd_4.02_11, Version=4.2.2.0, Culture=neutral, PublicKeyToken=460a0bef3ba73253">
+  <SpecificVersion>False</SpecificVersion>
+  <HintPath>..\..\..\..\..\..\exe\vc11_amd64dll\TD_Mgd_4.02_11.dll</HintPath>
+</Reference>
+
+	</ItemGroup>
+	<Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+	<PropertyGroup>
+		<PostBuildEvent>echo off
+		</PostBuildEvent>
+	</PropertyGroup>
+</Project>

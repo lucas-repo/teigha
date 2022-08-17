@@ -1,0 +1,29 @@
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+
+#include "winres.h"
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#endif //_WIN32
+
+#define PRODUCT_NAME_ADDITION TDNET_C_PRODUCT_NAME_ADDITION_W
+#ifdef _DEBUG
+#define FILE_DESCRIPTION TD_PRODUCT_NAME_START_W PRODUCT_NAME_ADDITION L": ManagedTestCommand Module (Debug)\0"
+#else
+#define FILE_DESCRIPTION TD_PRODUCT_NAME_START_W PRODUCT_NAME_ADDITION L": ManagedTestCommand Module\0"
+#endif
+
+#define INTERNAL_NAME "ManagedTestCommand\0"
+#define ORIGINAL_FILE_NAME    "ManagedTestCommand.tx\0"
+#define COPYRIGHT_START_YEAR  TDNET_C_COPYRIGHT_START_YEAR_W
+
+#include "../../../../VersionInfo.rc2"
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////

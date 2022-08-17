@@ -1,0 +1,55 @@
+{
+module Lexer1
+open System
+open Parser
+open Microsoft.FSharp.Text.Lexing
+let maketable buf = 
+ let s = LexBuffer<_>.LexemeString buf 
+ Int64.Parse(s.Substring(6, s.Length-7))
+}
+
+let digit = ['0'-'9']
+let whitespace = [' ' '\t' ]
+let newline = ('\n' | '\r' '\n')
+
+
+rule token = parse
+| whitespace        { token lexbuf }
+| newline        { token lexbuf }
+| "table("digit+")"       { TABLE (maketable lexbuf) }
+| ['-']?digit+('.'digit+)?(['e''E']digit+)?   { FLOAT (Double.Parse(LexBuffer<_>.LexemeString lexbuf)) }
+| "sin"        { SIN }
+| "cos"        { COS }
+| "tan"        { TAN }
+| "asin"       { ASIN }
+| "acos"       { ACOS }
+| "atan"       { ATAN }
+| "ln"         { LN }
+| "log"        { LOG }
+| "exp"        { EXP }
+| "sqr"        { SQR }
+| "sqrt"       { SQRT }
+| "r2d"        { R2D }
+| "d2r"        { D2R }
+| "abs"        { ABS }
+| "round"      { ROUND }        
+| "trunc"      { TRUNC }
+| "dist"       { DIST }
+| "ill"        { ILL }   
+| "nor"        { NOR }
+| "vec"        { VEC }
+| "vec1"       { VEC1 }
+| "+"          { PLUS }         
+| "-"          { DASH  } 
+| "*"          { ASTERISK }
+| "/"          { SLASH }     
+| "^"          { CARET }
+| "["          { LBRACKET }     
+| "]"          { RBRACKET } 
+| ","          { COMMA }
+| "."          { DOT }
+| ":"          { COLON }
+| "("            { LPAREN }
+| ")"            { RPAREN }
+| ['A'-'Z' 'a'-'z']+(['0'-'9' 'A'-'Z' 'a'-'z']+)?     { LITERAL(LexBuffer<_>.LexemeString lexbuf) }
+| eof   { EOF }

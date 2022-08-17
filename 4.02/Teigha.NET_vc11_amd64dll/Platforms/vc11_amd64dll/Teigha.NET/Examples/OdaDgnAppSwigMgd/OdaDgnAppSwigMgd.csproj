@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+		<ProductVersion>8.0.30703</ProductVersion>
+		<SchemaVersion>2.0</SchemaVersion>
+		<ProjectGuid>{C1C32442-3651-46F1-A228-4D3169F4A181}</ProjectGuid>
+		<OutputType>WinExe</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>OdaDgnAppSwigMgd</RootNamespace>
+		<AssemblyName>OdaDgnAppSwigMgd</AssemblyName>
+		<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+		<FileAlignment>512</FileAlignment>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+		<Optimize>true</Optimize>
+		<DefineConstants>_CRTDBG_MAP_ALLOC;_CRTDBG_MAP_ALLOC;TRACE;</DefineConstants>
+		<OutputPath>..\..\..\..\..\exe\vc11_amd64dll</OutputPath>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+		<PlatformTarget>x64</PlatformTarget>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="System"/>
+		<Reference Include="System.Data"/>
+		<Reference Include="System.Drawing"/>
+		<Reference Include="System.Windows.Forms"/>
+		<Reference Include="TD_SwigCoreMgd">
+			<SpecificVersion>False</SpecificVersion>
+			<HintPath>..\..\..\..\..\exe\vc11_amd64dll\TD_SwigCoreMgd.dll</HintPath>
+		</Reference>
+		<Reference Include="TG_SwigDbMgd">
+			<SpecificVersion>False</SpecificVersion>
+			<HintPath>..\..\..\..\..\exe\vc11_amd64dll\TG_SwigDbMgd.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\DgnTreeFiller.cs">
+			<Link>DgnTreeFiller.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\ExDgnElementDumperPE.cs">
+			<Link>ExDgnElementDumperPE.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\Program.cs">
+			<Link>Program.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\Teigha.NET\GeneralAssemblyInfo.cs">
+			<Link>GeneralAssemblyInfo.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\Export2PdfForm.cs">
+			<Link>Export2PdfForm.cs</Link>
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\Export2PdfForm.Designer.cs">
+			<Link>Export2PdfForm.Designer.cs</Link>
+			<DependentUpon>Export2PdfForm.cs</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\Export2PdfForm.resx">
+			<Link>Export2PdfForm.resx</Link>
+			<SubType>Designer</SubType>
+			<DependentUpon>Export2PdfForm.cs</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\Export2STLDlg.cs">
+			<Link>Export2STLDlg.cs</Link>
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\Export2STLDlg.Designer.cs">
+			<Link>Export2STLDlg.Designer.cs</Link>
+			<DependentUpon>Export2STLDlg.cs</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\Export2STLDlg.resx">
+			<Link>Export2STLDlg.resx</Link>
+			<SubType>Designer</SubType>
+			<DependentUpon>Export2STLDlg.cs</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\FindObjectDlg.cs">
+			<Link>FindObjectDlg.cs</Link>
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\FindObjectDlg.Designer.cs">
+			<Link>FindObjectDlg.Designer.cs</Link>
+			<DependentUpon>FindObjectDlg.cs</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\FindObjectDlg.resx">
+			<Link>FindObjectDlg.resx</Link>
+			<SubType>Designer</SubType>
+			<DependentUpon>FindObjectDlg.cs</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\Form1.cs">
+			<Link>Form1.cs</Link>
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\Form1.Designer.cs">
+			<Link>Form1.Designer.cs</Link>
+			<DependentUpon>Form1.cs</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\Form1.resx">
+			<Link>Form1.resx</Link>
+			<SubType>Designer</SubType>
+			<DependentUpon>Form1.cs</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\VectorizeForm.cs">
+			<Link>VectorizeForm.cs</Link>
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\VectorizeForm.Designer.cs">
+			<Link>VectorizeForm.Designer.cs</Link>
+			<DependentUpon>VectorizeForm.cs</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\VectorizeForm.resx">
+			<Link>VectorizeForm.resx</Link>
+			<SubType>Designer</SubType>
+			<DependentUpon>VectorizeForm.cs</DependentUpon>
+		</EmbeddedResource>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\Tree.cs">
+			<Link>Tree.cs</Link>
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\Tree.Designer.cs">
+			<Link>Tree.Designer.cs</Link>
+			<DependentUpon>Tree.cs</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="..\..\..\..\..\Teigha.NET\Examples\OdaDgnAppSwigMgd\Tree.resx">
+			<Link>Tree.resx</Link>
+			<SubType>Designer</SubType>
+			<DependentUpon>Tree.cs</DependentUpon>
+		</EmbeddedResource>
+		<None Include="Properties\Settings.settings">
+			<Generator>SettingsSingleFileGenerator</Generator>
+			<LastGenOutput>Settings.Designer.cs</LastGenOutput>
+		</None>
+		<Compile Include="Properties\Settings.Designer.cs">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Settings.settings</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="Properties\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+		<Compile Include="Properties\Resources.Designer.cs">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+		<Compile Include="Properties\AssemblyInfo.cs"/>
+	</ItemGroup>
+	<Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+	<PropertyGroup>
+		<PostBuildEvent>echo off
+setlocal
+copy "$(TargetDir)\CRT.manifest" OdaDgnAppSwigMgd.exe.manifest
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd		</PostBuildEvent>
+	</PropertyGroup>
+</Project>

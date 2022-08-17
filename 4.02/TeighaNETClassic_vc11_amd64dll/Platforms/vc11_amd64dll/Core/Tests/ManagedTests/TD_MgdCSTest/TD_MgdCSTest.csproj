@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+		<ProductVersion>8.0.30703</ProductVersion>
+		<SchemaVersion>2.0</SchemaVersion>
+		<ProjectGuid>{449E5712-D8AF-46CB-AE71-4F87530A44B7}</ProjectGuid>
+		<OutputType>Exe</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>TD_MgdCSTest</RootNamespace>
+		<AssemblyName>TD_MgdCSTest</AssemblyName>
+		<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+		<FileAlignment>512</FileAlignment>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+		<Optimize>true</Optimize>
+		<DefineConstants>SPLINE_TEST_ENABLED;_CRTDBG_MAP_ALLOC;TRACE;</DefineConstants>
+		<OutputPath>..\..\..\..\..\..\exe\vc11_amd64dll</OutputPath>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+		<PlatformTarget>x64</PlatformTarget>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="System"/>
+		<Reference Include="System.Data"/>
+		<Reference Include="System.Drawing"/>
+		<Reference Include="System.Xml"/>
+		<Reference Include=";System.Xml.Linq"/>
+		<Reference Include=";System.Windows.Forms"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="..\..\..\..\..\..\Core\Tests\ManagedTests\TD_MgdCSTest\HostAppServ.cs">
+			<Link>HostAppServ.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Tests\ManagedTests\TD_MgdCSTest\Program.cs">
+			<Link>Program.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Tests\ManagedTests\MgdTestSharedCode\Test.cs">
+			<Link>MgdTestSharedCode/Test.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Tests\ManagedTests\MgdTestSharedCode\TestBrep.cs">
+			<Link>MgdTestSharedCode/TestBrep.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Tests\ManagedTests\MgdTestSharedCode\TestMain.cs">
+			<Link>MgdTestSharedCode/TestMain.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Tests\ManagedTests\MgdTestSharedCode\TestModeler.cs">
+			<Link>MgdTestSharedCode/TestModeler.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Tests\ManagedTests\MgdTestSharedCode\TestRegression.cs">
+			<Link>MgdTestSharedCode/TestRegression.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Tests\ManagedTests\MgdTestSharedCode\TestExports.cs">
+			<Link>MgdTestSharedCode/TestExports.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Tests\ManagedTests\MgdTestSharedCode\TestGeometry.cs">
+			<Link>MgdTestSharedCode/TestGeometry.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Tests\ManagedTests\MgdTestSharedCode\TestHistory.cs">
+			<Link>MgdTestSharedCode/TestHistory.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\GeneralAssemblyInfo.cs">
+			<Link>Z:/B/2/1/1928/Core/Examples/ManagedWrappers/GeneralAssemblyInfo.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Tests\ManagedTests\MgdTestSharedCode\TestSpline.cs">
+			<Link>MgdTestSharedCode/TestSpline.cs</Link>
+		</Compile>
+		<Compile Include="Properties\AssemblyInfo.cs"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="TD_Mgd_4.02_11, Version=4.2.2.0, Culture=neutral, PublicKeyToken=460a0bef3ba73253">
+  <SpecificVersion>False</SpecificVersion>
+  <HintPath>..\..\..\..\..\..\exe\vc11_amd64dll\TD_Mgd_4.02_11.dll</HintPath>
+</Reference>
+
+		<Reference Include="TD_MgdBrep_4.02_11, Version=0.0.0.0, Culture=neutral, PublicKeyToken=72d0c4b9e29461f9">
+  <SpecificVersion>False</SpecificVersion>
+  <HintPath>..\..\..\..\..\..\exe\vc11_amd64dll\TD_MgdBrep_4.02_11.dll</HintPath>
+</Reference>
+
+	</ItemGroup>
+	<Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+	<PropertyGroup>
+		<PostBuildEvent>echo off
+		</PostBuildEvent>
+	</PropertyGroup>
+</Project>

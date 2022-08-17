@@ -1,0 +1,169 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{46179628-C231-3063-A0BE-7283DB668564}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DwgDgnViewerSwigMgd", "Teigha.NET\Examples\DwgDgnViewerSwigMgd\DwgDgnViewerSwigMgd.csproj", "{1F164AF7-CD16-46F5-A9BD-9E4E4BE7C861}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvaluationExample", "Teigha.NET\Examples\EvaluationExample\EvaluationExample.csproj", "{0301F6E7-9B1E-4573-8695-ED084C5A8E50}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExDgnCreateSwigMgd", "Teigha.NET\Examples\ExDgnCreateSwigMgd\ExDgnCreateSwigMgd.csproj", "{7ABCA234-D641-40A2-B330-95588C3AF7FC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExDgnDumpSwigMgd", "Teigha.NET\Examples\ExDgnDumpSwigMgd\ExDgnDumpSwigMgd.csproj", "{92EE5F6D-4AA3-4F84-BC06-86625771178A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExDgnReadWriteSwigMgd", "Teigha.NET\Examples\ExDgnReadWriteSwigMgd\ExDgnReadWriteSwigMgd.csproj", "{46CF935F-D9B4-460B-9A35-971361810955}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExDgnSimpleProjectSwigMgd", "Teigha.NET\Examples\ExDgnSimpleProjectSwigMgd\ExDgnSimpleProjectSwigMgd.csproj", "{A152358B-5189-4097-92FA-06E751F23EED}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExDgnVectorizeSwigMgd", "Teigha.NET\Examples\ExDgnVectorizeSwigMgd\ExDgnVectorizeSwigMgd.csproj", "{09A7CA99-3C70-4994-B83D-AF19BF6E3748}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreadedDumper", "Teigha.NET\Examples\MultiThreadedDumper\MultiThreadedDumper.csproj", "{9E7804D6-5D86-4501-9F00-1434FAD3CC3A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdBrExSwigMgd", "Teigha.NET\Examples\OdBrExSwigMgd\OdBrExSwigMgd.csproj", "{CCCD9785-512B-4263-8C0D-C6EAA162CAD9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdReadExSwigMgd", "Teigha.NET\Examples\OdReadExSwigMgd\OdReadExSwigMgd.csproj", "{FA7EA5AE-381C-4F5B-B086-74433E61F1C3}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdWriteExSwigMgd", "Teigha.NET\Examples\OdWriteExSwigMgd\OdWriteExSwigMgd.csproj", "{76E21011-4B0D-4628-80B2-37985CD2CDC2}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdaDgnAppSwigMgd", "Teigha.NET\Examples\OdaDgnAppSwigMgd\OdaDgnAppSwigMgd.csproj", "{C1C32442-3651-46F1-A228-4D3169F4A181}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdaDwgAppSwigMgd", "Teigha.NET\Examples\OdaDwgAppSwigMgd\OdaDwgAppSwigMgd.csproj", "{679AF6E0-3A87-419D-AD2A-E4EBAA21C901}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBDwgAppSwigMgd", "Teigha.NET\Examples\VBDwgAppSwigMgd\VBDwgAppSwigMgd.vbproj", "{F9908177-6326-4B81-95BF-C62650486071}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfSample", "Teigha.NET\Examples\WpfSample\WpfSample.csproj", "{FB758ED6-BF8F-4593-91A1-52087ACBD19A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F164AF7-CD16-46F5-A9BD-9E4E4BE7C861}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{1F164AF7-CD16-46F5-A9BD-9E4E4BE7C861}.Release|Mixed Platforms.Build.0 = Release|x64
+		{1F164AF7-CD16-46F5-A9BD-9E4E4BE7C861}.Release|x64.ActiveCfg = Release|x64
+		{1F164AF7-CD16-46F5-A9BD-9E4E4BE7C861}.Release|x64.ActiveCfg = Release|x64
+		{1F164AF7-CD16-46F5-A9BD-9E4E4BE7C861}.Release|x64.Build.0 = Release|x64
+		{0301F6E7-9B1E-4573-8695-ED084C5A8E50}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{0301F6E7-9B1E-4573-8695-ED084C5A8E50}.Release|Mixed Platforms.Build.0 = Release|x64
+		{0301F6E7-9B1E-4573-8695-ED084C5A8E50}.Release|x64.ActiveCfg = Release|x64
+		{0301F6E7-9B1E-4573-8695-ED084C5A8E50}.Release|x64.ActiveCfg = Release|x64
+		{0301F6E7-9B1E-4573-8695-ED084C5A8E50}.Release|x64.Build.0 = Release|x64
+		{7ABCA234-D641-40A2-B330-95588C3AF7FC}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{7ABCA234-D641-40A2-B330-95588C3AF7FC}.Release|Mixed Platforms.Build.0 = Release|x64
+		{7ABCA234-D641-40A2-B330-95588C3AF7FC}.Release|x64.ActiveCfg = Release|x64
+		{7ABCA234-D641-40A2-B330-95588C3AF7FC}.Release|x64.ActiveCfg = Release|x64
+		{7ABCA234-D641-40A2-B330-95588C3AF7FC}.Release|x64.Build.0 = Release|x64
+		{92EE5F6D-4AA3-4F84-BC06-86625771178A}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{92EE5F6D-4AA3-4F84-BC06-86625771178A}.Release|Mixed Platforms.Build.0 = Release|x64
+		{92EE5F6D-4AA3-4F84-BC06-86625771178A}.Release|x64.ActiveCfg = Release|x64
+		{92EE5F6D-4AA3-4F84-BC06-86625771178A}.Release|x64.ActiveCfg = Release|x64
+		{92EE5F6D-4AA3-4F84-BC06-86625771178A}.Release|x64.Build.0 = Release|x64
+		{46CF935F-D9B4-460B-9A35-971361810955}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{46CF935F-D9B4-460B-9A35-971361810955}.Release|Mixed Platforms.Build.0 = Release|x64
+		{46CF935F-D9B4-460B-9A35-971361810955}.Release|x64.ActiveCfg = Release|x64
+		{46CF935F-D9B4-460B-9A35-971361810955}.Release|x64.ActiveCfg = Release|x64
+		{46CF935F-D9B4-460B-9A35-971361810955}.Release|x64.Build.0 = Release|x64
+		{A152358B-5189-4097-92FA-06E751F23EED}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{A152358B-5189-4097-92FA-06E751F23EED}.Release|Mixed Platforms.Build.0 = Release|x64
+		{A152358B-5189-4097-92FA-06E751F23EED}.Release|x64.ActiveCfg = Release|x64
+		{A152358B-5189-4097-92FA-06E751F23EED}.Release|x64.ActiveCfg = Release|x64
+		{A152358B-5189-4097-92FA-06E751F23EED}.Release|x64.Build.0 = Release|x64
+		{09A7CA99-3C70-4994-B83D-AF19BF6E3748}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{09A7CA99-3C70-4994-B83D-AF19BF6E3748}.Release|Mixed Platforms.Build.0 = Release|x64
+		{09A7CA99-3C70-4994-B83D-AF19BF6E3748}.Release|x64.ActiveCfg = Release|x64
+		{09A7CA99-3C70-4994-B83D-AF19BF6E3748}.Release|x64.ActiveCfg = Release|x64
+		{09A7CA99-3C70-4994-B83D-AF19BF6E3748}.Release|x64.Build.0 = Release|x64
+		{9E7804D6-5D86-4501-9F00-1434FAD3CC3A}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{9E7804D6-5D86-4501-9F00-1434FAD3CC3A}.Release|Mixed Platforms.Build.0 = Release|x64
+		{9E7804D6-5D86-4501-9F00-1434FAD3CC3A}.Release|x64.ActiveCfg = Release|x64
+		{9E7804D6-5D86-4501-9F00-1434FAD3CC3A}.Release|x64.ActiveCfg = Release|x64
+		{9E7804D6-5D86-4501-9F00-1434FAD3CC3A}.Release|x64.Build.0 = Release|x64
+		{CCCD9785-512B-4263-8C0D-C6EAA162CAD9}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{CCCD9785-512B-4263-8C0D-C6EAA162CAD9}.Release|Mixed Platforms.Build.0 = Release|x64
+		{CCCD9785-512B-4263-8C0D-C6EAA162CAD9}.Release|x64.ActiveCfg = Release|x64
+		{CCCD9785-512B-4263-8C0D-C6EAA162CAD9}.Release|x64.ActiveCfg = Release|x64
+		{CCCD9785-512B-4263-8C0D-C6EAA162CAD9}.Release|x64.Build.0 = Release|x64
+		{FA7EA5AE-381C-4F5B-B086-74433E61F1C3}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{FA7EA5AE-381C-4F5B-B086-74433E61F1C3}.Release|Mixed Platforms.Build.0 = Release|x64
+		{FA7EA5AE-381C-4F5B-B086-74433E61F1C3}.Release|x64.ActiveCfg = Release|x64
+		{FA7EA5AE-381C-4F5B-B086-74433E61F1C3}.Release|x64.ActiveCfg = Release|x64
+		{FA7EA5AE-381C-4F5B-B086-74433E61F1C3}.Release|x64.Build.0 = Release|x64
+		{76E21011-4B0D-4628-80B2-37985CD2CDC2}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{76E21011-4B0D-4628-80B2-37985CD2CDC2}.Release|Mixed Platforms.Build.0 = Release|x64
+		{76E21011-4B0D-4628-80B2-37985CD2CDC2}.Release|x64.ActiveCfg = Release|x64
+		{76E21011-4B0D-4628-80B2-37985CD2CDC2}.Release|x64.ActiveCfg = Release|x64
+		{76E21011-4B0D-4628-80B2-37985CD2CDC2}.Release|x64.Build.0 = Release|x64
+		{C1C32442-3651-46F1-A228-4D3169F4A181}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{C1C32442-3651-46F1-A228-4D3169F4A181}.Release|Mixed Platforms.Build.0 = Release|x64
+		{C1C32442-3651-46F1-A228-4D3169F4A181}.Release|x64.ActiveCfg = Release|x64
+		{C1C32442-3651-46F1-A228-4D3169F4A181}.Release|x64.ActiveCfg = Release|x64
+		{C1C32442-3651-46F1-A228-4D3169F4A181}.Release|x64.Build.0 = Release|x64
+		{679AF6E0-3A87-419D-AD2A-E4EBAA21C901}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{679AF6E0-3A87-419D-AD2A-E4EBAA21C901}.Release|Mixed Platforms.Build.0 = Release|x64
+		{679AF6E0-3A87-419D-AD2A-E4EBAA21C901}.Release|x64.ActiveCfg = Release|x64
+		{679AF6E0-3A87-419D-AD2A-E4EBAA21C901}.Release|x64.ActiveCfg = Release|x64
+		{679AF6E0-3A87-419D-AD2A-E4EBAA21C901}.Release|x64.Build.0 = Release|x64
+		{F9908177-6326-4B81-95BF-C62650486071}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{F9908177-6326-4B81-95BF-C62650486071}.Release|Mixed Platforms.Build.0 = Release|x64
+		{F9908177-6326-4B81-95BF-C62650486071}.Release|x64.ActiveCfg = Release|x64
+		{F9908177-6326-4B81-95BF-C62650486071}.Release|x64.ActiveCfg = Release|x64
+		{F9908177-6326-4B81-95BF-C62650486071}.Release|x64.Build.0 = Release|x64
+		{FB758ED6-BF8F-4593-91A1-52087ACBD19A}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{FB758ED6-BF8F-4593-91A1-52087ACBD19A}.Release|Mixed Platforms.Build.0 = Release|x64
+		{FB758ED6-BF8F-4593-91A1-52087ACBD19A}.Release|x64.ActiveCfg = Release|x64
+		{FB758ED6-BF8F-4593-91A1-52087ACBD19A}.Release|x64.ActiveCfg = Release|x64
+		{FB758ED6-BF8F-4593-91A1-52087ACBD19A}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F164AF7-CD16-46F5-A9BD-9E4E4BE7C861} = {46179628-C231-3063-A0BE-7283DB668564}
+		{0301F6E7-9B1E-4573-8695-ED084C5A8E50} = {46179628-C231-3063-A0BE-7283DB668564}
+		{7ABCA234-D641-40A2-B330-95588C3AF7FC} = {46179628-C231-3063-A0BE-7283DB668564}
+		{92EE5F6D-4AA3-4F84-BC06-86625771178A} = {46179628-C231-3063-A0BE-7283DB668564}
+		{46CF935F-D9B4-460B-9A35-971361810955} = {46179628-C231-3063-A0BE-7283DB668564}
+		{A152358B-5189-4097-92FA-06E751F23EED} = {46179628-C231-3063-A0BE-7283DB668564}
+		{09A7CA99-3C70-4994-B83D-AF19BF6E3748} = {46179628-C231-3063-A0BE-7283DB668564}
+		{9E7804D6-5D86-4501-9F00-1434FAD3CC3A} = {46179628-C231-3063-A0BE-7283DB668564}
+		{CCCD9785-512B-4263-8C0D-C6EAA162CAD9} = {46179628-C231-3063-A0BE-7283DB668564}
+		{FA7EA5AE-381C-4F5B-B086-74433E61F1C3} = {46179628-C231-3063-A0BE-7283DB668564}
+		{76E21011-4B0D-4628-80B2-37985CD2CDC2} = {46179628-C231-3063-A0BE-7283DB668564}
+		{C1C32442-3651-46F1-A228-4D3169F4A181} = {46179628-C231-3063-A0BE-7283DB668564}
+		{679AF6E0-3A87-419D-AD2A-E4EBAA21C901} = {46179628-C231-3063-A0BE-7283DB668564}
+		{F9908177-6326-4B81-95BF-C62650486071} = {46179628-C231-3063-A0BE-7283DB668564}
+		{FB758ED6-BF8F-4593-91A1-52087ACBD19A} = {46179628-C231-3063-A0BE-7283DB668564}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

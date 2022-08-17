@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+		<ProductVersion>8.0.30703</ProductVersion>
+		<SchemaVersion>2.0</SchemaVersion>
+		<ProjectGuid>{1BFFF5F8-9FA4-4AC5-82DB-B700E6EE3B59}</ProjectGuid>
+		<OutputType>Exe</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>OdWriteExMgd</RootNamespace>
+		<AssemblyName>OdWriteExMgd</AssemblyName>
+		<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+		<FileAlignment>512</FileAlignment>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+		<Optimize>true</Optimize>
+		<DefineConstants>_CRTDBG_MAP_ALLOC;TRACE;</DefineConstants>
+		<OutputPath>..\..\..\..\..\..\exe\vc11_amd64dll</OutputPath>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+		<PlatformTarget>x64</PlatformTarget>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="System"/>
+		<Reference Include="System.Data"/>
+		<Reference Include="System.Drawing"/>
+		<Reference Include="System.Xml"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdWriteExMgd\DbFiller.cs">
+			<Link>DbFiller.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdWriteExMgd\DbFiller2.cs">
+			<Link>DbFiller2.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdWriteExMgd\EntityBoxes.cs">
+			<Link>EntityBoxes.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdWriteExMgd\Program.cs">
+			<Link>Program.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\GeneralAssemblyInfo.cs">
+			<Link>GeneralAssemblyInfo.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\OdaMgdMViewApp\HostAppServ.cs">
+			<Link>OdaMgdMViewApp/HostAppServ.cs</Link>
+		</Compile>
+		<Compile Include="Properties\AssemblyInfo.cs"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="TD_Mgd_4.02_11, Version=4.2.2.0, Culture=neutral, PublicKeyToken=460a0bef3ba73253">
+  <SpecificVersion>False</SpecificVersion>
+  <HintPath>..\..\..\..\..\..\exe\vc11_amd64dll\TD_Mgd_4.02_11.dll</HintPath>
+</Reference>
+
+	</ItemGroup>
+	<Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+	<PropertyGroup>
+		<PostBuildEvent>echo off
+setlocal
+copy /b /y "$(TargetDir)..\..\Core\Examples\ManagedWrappers\OdWriteExMgd\OdWriteEx.dwf" "$(TargetDir)OdWriteEx.dwf"
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEndsetlocal
+copy /b /y "$(TargetDir)..\..\Core\Examples\ManagedWrappers\OdWriteExMgd\OdWriteEx XRef.dwg" "$(TargetDir)OdWriteEx XRef.dwg"
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEndsetlocal
+copy /b /y "$(TargetDir)..\..\Core\Examples\ManagedWrappers\OdWriteExMgd\OdWriteEx.sat" "$(TargetDir)OdWriteEx.sat"
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEndsetlocal
+copy /b /y "$(TargetDir)..\..\Core\Examples\ManagedWrappers\OdWriteExMgd\OdWriteEx.jpg" "$(TargetDir)OdWriteEx.jpg"
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEndsetlocal
+copy /b /y "$(TargetDir)..\..\Core\Examples\ManagedWrappers\OdWriteExMgd\OdWriteEx.xls" "$(TargetDir)OdWriteEx.xls"
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEndsetlocal
+copy /b /y "$(TargetDir)..\..\Core\Examples\ManagedWrappers\OdWriteExMgd\OdWriteEx.pdf" "$(TargetDir)OdWriteEx.pdf"
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd		</PostBuildEvent>
+	</PropertyGroup>
+</Project>

@@ -1,0 +1,42 @@
+%token <float> FLOAT
+%token <string> LITERAL
+%token <int64> TABLE
+%token PLUS DASH
+%token ASTERISK SLASH CARET
+%token PI E SIN COS TAN ASIN ACOS ATAN LOG LN EXP SQR SQRT R2D D2R ABS ROUND TRUNC DIST ILL NOR VEC VEC1 COLON
+%token LBRACKET RBRACKET COMMA DOT
+%token LPAREN RPAREN
+%token EOF
+%left DASH PLUS
+%left ASTERISK SLASH
+%right CARET
+%left DOT
+%left COMMA
+
+
+%start Main
+%type <expr> Main
+%%
+
+Main:
+ Expr EOF { $1 } ;
+
+Expr: 
+  LITERAL { Literal $1 }
+  | PI { Float System.Math.PI }
+  | E { Float 0.0 }
+  | FLOAT { Float $1 }
+  | DASH FLOAT { Float (- $2) }
+  | LPAREN Expr RPAREN { $2 }
+  | LBRACKET Expr COMMA Expr COMMA Expr RBRACKET { Vector($2, $4, $6) }
+  | LBRACKET Expr COMMA Expr RBRACKET { Vector($2, $4, Float(0.0)) }
+  | Expr ASTERISK Expr { Mul($1, $3) }
+  | Expr SLASH Expr { Div($1, $3) }
+  | Expr PLUS Expr { Plus($1, $3) }
+  | Expr DASH Expr { Minus($1, $3) }
+  | TABLE DOT LITERAL LPAREN LITERAL LPAREN LITERAL COLON LITERAL RPAREN RPAREN 
+    { match $3 with 
+      | "evaluate" -> TableEval($1, $5, $7, $9) 
+      | _ -> failwith "unexpected table function"}
+  | TABLE DOT LITERAL { Table($1,$3)}
+  | LITERAL LPAREN LITERAL COLON LITERAL RPAREN { ImplicitTableEval($1, $3, $5) }

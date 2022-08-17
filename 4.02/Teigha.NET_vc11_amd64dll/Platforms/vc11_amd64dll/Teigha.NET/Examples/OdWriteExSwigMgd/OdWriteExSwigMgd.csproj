@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+		<ProductVersion>8.0.30703</ProductVersion>
+		<SchemaVersion>2.0</SchemaVersion>
+		<ProjectGuid>{76E21011-4B0D-4628-80B2-37985CD2CDC2}</ProjectGuid>
+		<OutputType>Exe</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>OdWriteExSwigMgd</RootNamespace>
+		<AssemblyName>OdWriteExSwigMgd</AssemblyName>
+		<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+		<FileAlignment>512</FileAlignment>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+		<Optimize>true</Optimize>
+		<DefineConstants>_CRTDBG_MAP_ALLOC;_CRTDBG_MAP_ALLOC;TRACE;</DefineConstants>
+		<OutputPath>..\..\..\..\..\exe\vc11_amd64dll</OutputPath>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+		<PlatformTarget>x64</PlatformTarget>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="System"/>
+		<Reference Include="System.Data"/>
+		<Reference Include="System.Xml"/>
+		<Reference Include="TD_SwigCoreMgd">
+			<SpecificVersion>False</SpecificVersion>
+			<HintPath>..\..\..\..\..\exe\vc11_amd64dll\TD_SwigCoreMgd.dll</HintPath>
+		</Reference>
+		<Reference Include="TD_SwigDbMgd">
+			<SpecificVersion>False</SpecificVersion>
+			<HintPath>..\..\..\..\..\exe\vc11_amd64dll\TD_SwigDbMgd.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdWriteExSwigMgd\DbFiller.cs">
+			<Link>DbFiller.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdWriteExSwigMgd\DbSubDMeshData.cs">
+			<Link>DbSubDMeshData.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdWriteExSwigMgd\EntityBoxes.cs">
+			<Link>EntityBoxes.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdWriteExSwigMgd\OdWinNTCrypt.cs">
+			<Link>OdWinNTCrypt.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdWriteExSwigMgd\OleWrappers.cs">
+			<Link>OleWrappers.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdWriteExSwigMgd\PageControllers.cs">
+			<Link>PageControllers.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\Teigha.NET\Examples\OdWriteExSwigMgd\Program.cs">
+			<Link>Program.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\Teigha.NET\GeneralAssemblyInfo.cs">
+			<Link>GeneralAssemblyInfo.cs</Link>
+		</Compile>
+		<Compile Include="Properties\AssemblyInfo.cs"/>
+	</ItemGroup>
+	<Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+	<PropertyGroup>
+		<PostBuildEvent>echo off
+setlocal
+copy "$(TargetDir)\CRT.manifest" OdWriteExSwigMgd.exe.manifest
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEndsetlocal
+copy /b /y "$(TargetDir)..\..\Teigha.NET\Examples\OdWriteExSwigMgd\extrudedsurf.sat" "$(TargetDir)extrudedsurf.sat"
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEndsetlocal
+copy /b /y "$(TargetDir)..\..\Teigha.NET\Examples\OdWriteExSwigMgd\loftedsurf.sat" "$(TargetDir)loftedsurf.sat"
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEndsetlocal
+copy /b /y "$(TargetDir)..\..\Teigha.NET\Examples\OdWriteExSwigMgd\OdWriteEx.sat" "$(TargetDir)OdWriteEx.sat"
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEndsetlocal
+copy /b /y "$(TargetDir)..\..\Teigha.NET\Examples\OdWriteExSwigMgd\revolvedsurf.sat" "$(TargetDir)revolvedsurf.sat"
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEndsetlocal
+copy /b /y "$(TargetDir)..\..\Teigha.NET\Examples\OdWriteExSwigMgd\sweptsurf.sat" "$(TargetDir)sweptsurf.sat"
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEndsetlocal
+copy /b /y "$(TargetDir)..\..\Teigha.NET\Examples\OdWriteExSwigMgd\OdWriteEx.xls.ole" "$(TargetDir)OdWriteEx.xls.ole"
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEndsetlocal
+copy /b /y "$(TargetDir)..\..\Teigha.NET\Examples\OdWriteExSwigMgd\OdWriteEx.txt" "$(TargetDir)OdWriteEx.txt"
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEndsetlocal
+copy /b /y "$(TargetDir)..\..\Teigha.NET\Examples\OdWriteExSwigMgd\odwriteex.dgn" "$(TargetDir)odwriteex.dgn"
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEndsetlocal
+copy /b /y "$(TargetDir)..\..\Teigha.NET\Examples\OdWriteExSwigMgd\OdWriteEx.dwf" "$(TargetDir)OdWriteEx.dwf"
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEndsetlocal
+copy /b /y "$(TargetDir)..\..\Teigha.NET\Examples\OdWriteExSwigMgd\OdWriteEx XRef.dwg" "$(TargetDir)OdWriteEx XRef.dwg"
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEndsetlocal
+copy /b /y "$(TargetDir)..\..\Teigha.NET\Examples\OdWriteExSwigMgd\OdWriteEx.jpg" "$(TargetDir)OdWriteEx.jpg"
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEndsetlocal
+copy /b /y "$(TargetDir)..\..\Teigha.NET\Examples\OdWriteExSwigMgd\odwriteex.pdf" "$(TargetDir)odwriteex.pdf"
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEndsetlocal
+copy /b /y "$(TargetDir)..\..\Teigha.NET\Examples\OdWriteExSwigMgd\OdWriteEx.xls" "$(TargetDir)OdWriteEx.xls"
+if %errorlevel% neq 0 goto :cmEnd
+
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd		</PostBuildEvent>
+	</PropertyGroup>
+</Project>

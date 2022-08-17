@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+		<ProductVersion>8.0.30703</ProductVersion>
+		<SchemaVersion>2.0</SchemaVersion>
+		<ProjectGuid>{F5365DEC-5FF0-403D-801F-7B1F6F47BD23}</ProjectGuid>
+		<OutputType>WinExe</OutputType>
+		<StartupObject>VBViewEx.My.MyApplication</StartupObject>
+		<RootNamespace>VBViewEx</RootNamespace>
+		<AssemblyName>VBViewEx</AssemblyName>
+		<MyType>WindowsForms</MyType>
+		<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+		<FileAlignment>512</FileAlignment>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+		<Optimize>true</Optimize>
+		<DefineDebug>false</DefineDebug>
+		<DefineTrace>false</DefineTrace>
+		<DocumentationFile>VBViewEx.xml</DocumentationFile>
+		<NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+		<OutputPath>..\..\..\..\..\..\exe\vc11_amd64dll</OutputPath>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+		<PlatformTarget>x64</PlatformTarget>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="System"/>
+		<Reference Include="System.Data"/>
+		<Reference Include="System.Deployment"/>
+		<Reference Include="System.Xml"/>
+		<Reference Include="System.Drawing"/>
+		<Reference Include="System.Windows.Forms"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Import Include="Microsoft.VisualBasic"/>
+		<Import Include="System"/>
+		<Import Include="System.Collections"/>
+		<Import Include="System.Collections.Generic"/>
+		<Import Include="System.Data"/>
+		<Import Include="System.Drawing"/>
+		<Import Include="System.Diagnostics"/>
+		<Import Include="System.Windows.Forms"/>
+		<Import Include="Teigha"/>
+		<Import Include="Teigha.DatabaseServices"/>
+		<Import Include="Teigha.Export_Import"/>
+		<Import Include="Teigha.Geometry"/>
+		<Import Include="Teigha.GraphicsInterface"/>
+		<Import Include="Teigha.GraphicsSystem"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\GeneralAssemblyInfo.vb">
+			<Link>GeneralAssemblyInfo.vb</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\VBViewEx\Form1.vb">
+			<Link>Form1.vb</Link>
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\VBViewEx\Form1.Designer.vb">
+			<Link>Form1.Designer.vb</Link>
+			<SubType>Form</SubType>
+			<DependentUpon>Form1.vb</DependentUpon>
+		</Compile>
+		<Compile Include="My Project\Settings.Designer.vb">
+			<AutoGen>True</AutoGen>
+			<DesignTimeSharedInput>True</DesignTimeSharedInput>
+			<DependentUpon>Settings.settings</DependentUpon>
+		</Compile>
+		<Compile Include="My Project\Resources.Designer.vb">
+			<AutoGen>True</AutoGen>
+			<DesignTime>True</DesignTime>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+		<Compile Include="My Project\Application.Designer.vb">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Application.myapp</DependentUpon>
+		</Compile>
+		<Compile Include="My Project\AssemblyInfo.vb"/>
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="..\..\..\..\..\..\Core\Examples\ManagedWrappers\VBViewEx\Form1.resx">
+			<Link>Form1.resx</Link>
+			<SubType>Designer</SubType>
+			<DependentUpon>Form1.vb</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="My Project\Resources.resx">
+			<SubType>Designer</SubType>
+			<Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.vb</LastGenOutput>
+			<CustomToolNamespace>My.Resources</CustomToolNamespace>
+		</EmbeddedResource>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="My Project\Settings.settings">
+			<Generator>SettingsSingleFileGenerator</Generator>
+			<LastGenOutput>Settings.Designer.vb</LastGenOutput>
+		</None>
+		<None Include="My Project\Application.myapp">
+			<Generator>MyApplicationCodeGenerator</Generator>
+			<LastGenOutput>Application.Designer.vb</LastGenOutput>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="TD_Mgd_4.02_11, Version=4.2.2.0, Culture=neutral, PublicKeyToken=460a0bef3ba73253">
+  <SpecificVersion>False</SpecificVersion>
+  <HintPath>..\..\..\..\..\..\exe\vc11_amd64dll\TD_Mgd_4.02_11.dll</HintPath>
+</Reference>
+
+	</ItemGroup>
+	<Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+	<PropertyGroup>
+		<PostBuildEvent>echo off
+		</PostBuildEvent>
+	</PropertyGroup>
+</Project>

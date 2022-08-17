@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+		<ProductVersion>8.0.30703</ProductVersion>
+		<SchemaVersion>2.0</SchemaVersion>
+		<ProjectGuid>{99F5185F-72C4-48D3-A772-2EF3851D8B03}</ProjectGuid>
+		<OutputType>Library</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>CDevGuideExamplesProject</RootNamespace>
+		<AssemblyName>CDevGuideExamplesProject</AssemblyName>
+		<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+		<FileAlignment>512</FileAlignment>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+		<Optimize>true</Optimize>
+		<DefineConstants>_CRTDBG_MAP_ALLOC;TRACE;</DefineConstants>
+		<OutputPath>..\..\..\..\..\..\..\exe\vc11_amd64dll</OutputPath>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+		<PlatformTarget>x64</PlatformTarget>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="System"/>
+		<Reference Include="System.Core"/>
+		<Reference Include="System.Data"/>
+		<Reference Include="System.Xml"/>
+		<Reference Include="System.Xml.Linq"/>
+		<Reference Include="System.Data.DataSetExtensions"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="..\..\..\..\..\..\..\Core\Examples\ManagedWrappers\DevGuideExamples\C#\ArcEx\ArcEx.cs">
+			<Link>ArcEx/ArcEx.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\..\Core\Examples\ManagedWrappers\DevGuideExamples\C#\BlockEx\BlockEx.cs">
+			<Link>BlockEx/BlockEx.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\..\Core\Examples\ManagedWrappers\DevGuideExamples\C#\CircleEx\CircleEx.cs">
+			<Link>CircleEx/CircleEx.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\..\Core\Examples\ManagedWrappers\DevGuideExamples\C#\DimEx\DimEx.cs">
+			<Link>DimEx/DimEx.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\..\Core\Examples\ManagedWrappers\DevGuideExamples\C#\EllipseEx\EllipseEx.cs">
+			<Link>EllipseEx/EllipseEx.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\..\Core\Examples\ManagedWrappers\DevGuideExamples\C#\FaceEx\FaceEx.cs">
+			<Link>FaceEx/FaceEx.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\..\Core\Examples\ManagedWrappers\DevGuideExamples\C#\HelixEx\HelixEx.cs">
+			<Link>HelixEx/HelixEx.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\..\Core\Examples\ManagedWrappers\DevGuideExamples\C#\MlineEx\MlineEx.cs">
+			<Link>MlineEx/MlineEx.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\..\Core\Examples\ManagedWrappers\DevGuideExamples\C#\MTextEx\MTexExt.cs">
+			<Link>MTextEx/MTexExt.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\..\Core\Examples\ManagedWrappers\DevGuideExamples\C#\DBPointEx\DBPointEx.cs">
+			<Link>DBPointEx/DBPointEx.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\..\Core\Examples\ManagedWrappers\DevGuideExamples\C#\DBTextEx\DBTextEx.cs">
+			<Link>DBTextEx/DBTextEx.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\..\Core\Examples\ManagedWrappers\DevGuideExamples\C#\LineEx\LineEx.cs">
+			<Link>LineEx/LineEx.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\..\Core\Examples\ManagedWrappers\DevGuideExamples\C#\Polyline3dEx\Polyline3dEx.cs">
+			<Link>Polyline3dEx/Polyline3dEx.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\..\Core\Examples\ManagedWrappers\DevGuideExamples\C#\RayEx\RayEx.cs">
+			<Link>RayEx/RayEx.cs</Link>
+		</Compile>
+		<Compile Include="..\..\..\..\..\..\..\Core\Examples\ManagedWrappers\GeneralAssemblyInfo.cs">
+			<Link>GeneralAssemblyInfo.cs</Link>
+		</Compile>
+		<Compile Include="Properties\AssemblyInfo.cs"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="TD_Mgd_4.02_11, Version=4.2.2.0, Culture=neutral, PublicKeyToken=460a0bef3ba73253">
+  <SpecificVersion>False</SpecificVersion>
+  <HintPath>..\..\..\..\..\..\exe\vc11_amd64dll\TD_Mgd_4.02_11.dll</HintPath>
+</Reference>
+
+	</ItemGroup>
+	<Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+	<PropertyGroup>
+		<PostBuildEvent>echo off
+		</PostBuildEvent>
+	</PropertyGroup>
+</Project>

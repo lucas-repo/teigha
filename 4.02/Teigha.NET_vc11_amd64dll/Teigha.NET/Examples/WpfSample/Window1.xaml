@@ -1,0 +1,46 @@
+﻿<Window x:Class="WpfSample2.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:WpfSample2="clr-namespace:WpfSample2"
+    Title="Window1" Height="300" Width="300">
+  <Grid>
+    <Grid Name="grid1">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="10*" />
+        <RowDefinition Height="90*">
+        </RowDefinition>
+      </Grid.RowDefinitions>
+      <Button Grid.Row="0" Click="button1_Click" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Name="button1">Open</Button>
+      <Grid Grid.Row="1" Name="grid2">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="85*" />
+          <ColumnDefinition Width="15*" />
+        </Grid.ColumnDefinitions>
+        <WpfSample2:CustomImage1 x:Name="dwgControl" Grid.Column="0" SizeChanged="dwgControl_SizeChanged" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+        <Grid Name="grid3" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="20*" />
+          </Grid.RowDefinitions>
+          <Button Grid.Row="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Name="test1" Click="test1_Click">
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">
+                            Draw <LineBreak/> Line
+                        </TextBlock>
+          </Button>
+                
+          <Button Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Name="test2" Click="test2_Click">
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">
+                            Export <LineBreak/> to PDF
+                        </TextBlock>
+          </Button>
+          <Button Grid.Row="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Name="test3" Click="test3_Click">Test3</Button>
+          <Button Grid.Row="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Name="test4" Click="test4_Click">Test4</Button>
+          <Button Grid.Row="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Name="test5">Test5</Button>
+        </Grid>
+      </Grid>
+    </Grid>
+  </Grid>
+</Window>
